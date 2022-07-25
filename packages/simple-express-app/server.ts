@@ -1,17 +1,11 @@
 import express from 'express';
 import _ from 'lodash';
+import cors from 'cors';
 import { QueryPayload } from 'simple-shared-data';
 
 const app = express();
+app.use(cors());
 const port = 3001;
-
-app.use((_req, res, next) => {
-  // Allow any website to connect
-  res.setHeader('Access-Control-Allow-Origin', '*');
-
-  // Continue to next middleware
-  next();
-});
 
 app.get('/', (_req, res) => {
   const responseData: QueryPayload = {
