@@ -1,29 +1,20 @@
 {
-  "name": "masonry",
-  "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Tomek Regulski <tomek.regulski@gmail.com>",
-  "homepage": "https://github.com/tomekregulski/accoutrements#readme",
-  "license": "ISC",
-  "main": "lib/masonry.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomekregulski/accoutrements.git"
+  "name": "@accoutrements/masonry",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "packageManager": "yarn@3.0.2",
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "react": "^18.2.0",
+    "rollup": "^3.9.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/tomekregulski/accoutrements/issues"
-  },
-  "devDependencies": {
-    "typescript": "^4.7.4"
+    "build": "rollup -c",
+    "dev": "yarn build --watch",
+    "test": "jest --watch",
+    "test:watch": "yarn test --watch"
   }
 }

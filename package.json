@@ -1,19 +1,11 @@
 {
-  "name": "accoutrements",
+  "name": "@accoutrements/core",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:tomekregulski/accoutrements.git",
-  "author": "Tomek Regulski <tomek.regulski@gmail.com>",
-  "license": "MIT",
+  "packageManager": "yarn@3.0.2",
   "private": true,
-  "scripts": {
-    "start": "lerna run --parallel start"
-  },
-  "devDependencies": {
-    "lerna": "^5.2.0",
-    "typescript": "^4.7.4"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
 }
