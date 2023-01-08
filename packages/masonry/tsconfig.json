@@ -15,5 +15,10 @@
     "moduleResolution": "node"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "src/**/*.test.tsx"]
+  "exclude": [
+    "node_modules",
+    "lib",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx"
+  ]
 }
