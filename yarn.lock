@@ -22,15 +22,6 @@ __metadata:
     "@emotion/react": ^11.10.5
     "@emotion/styled": ^11.10.5
     "@mdx-js/react": ^1.6.22
-    "@storybook/addon-actions": ^6.5.15
-    "@storybook/addon-docs": ^6.5.15
-    "@storybook/addon-essentials": ^6.5.15
-    "@storybook/addon-interactions": ^6.5.15
-    "@storybook/addon-links": ^6.5.15
-    "@storybook/builder-webpack4": ^6.5.15
-    "@storybook/manager-webpack4": ^6.5.15
-    "@storybook/react": ^6.5.15
-    "@storybook/testing-library": ^0.0.13
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^12.1.2
     "@types/jest": ^29.2.5
@@ -54,6 +45,32 @@ __metadata:
     tailwindcss: ^3.2.4
     twin.macro: ^3.1.0
     typescript: "*"
+  languageName: unknown
+  linkType: soft
+
+"@accoutrements/stories@workspace:packages/stories":
+  version: 0.0.0-use.local
+  resolution: "@accoutrements/stories@workspace:packages/stories"
+  dependencies:
+    "@accoutrements/masonry": "workspace:packages/masonry"
+    "@babel/core": ^7.20.12
+    "@emotion/react": ^11.10.5
+    "@emotion/styled": ^11.10.5
+    "@mdx-js/react": ^1.6.22
+    "@storybook/addon-actions": ^6.5.15
+    "@storybook/addon-docs": ^6.5.15
+    "@storybook/addon-essentials": ^6.5.15
+    "@storybook/addon-interactions": ^6.5.15
+    "@storybook/addon-links": ^6.5.15
+    "@storybook/builder-webpack4": ^6.5.15
+    "@storybook/manager-webpack4": ^6.5.15
+    "@storybook/react": ^6.5.15
+    "@storybook/testing-library": ^0.0.13
+    babel-loader: ^8.3.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tailwindcss: ^3.2.4
+    twin.macro: ^3.1.0
   languageName: unknown
   linkType: soft
 
@@ -5354,7 +5371,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.0.0":
+"babel-loader@npm:^8.0.0, babel-loader@npm:^8.3.0":
   version: 8.3.0
   resolution: "babel-loader@npm:8.3.0"
   dependencies:
